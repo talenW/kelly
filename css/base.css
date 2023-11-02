@@ -323,6 +323,7 @@ a.demo--current {
 	align-content: center;
 	justify-content: center;
 	align-items: center;
+	background-color: #000;
 }
 
 .slide--current {
@@ -332,12 +333,11 @@ a.demo--current {
 
 .slide__img {
 	position: absolute;
-	top: -200px;
-	left: -200px;
-	width: calc(100% + 400px);
-	height: calc(100% + 400px);
-	background-size: cover;
+	width: calc(100%);
+	height: calc(100%);
+	background-size: contain;
 	background-position: 50% 50%;
+	background-repeat: no-repeat;
 }
 
 .slidenav {
@@ -474,4 +474,8 @@ a.demo--current {
 	.slide__link {
 		font-size: 0.85em;
 	}
+}
+
+.disappear {
+	display: none
 }
